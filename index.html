@@ -1,0 +1,237 @@
+<head>
+    <title>заметки для вовы</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <p>заметки для вовы</p>
+        <p>пожалуйста вова не бросай блять питон</p>
+    </header>
+    <main>
+        <h1>заметки для вовы</h1>
+    </main>
+    <hr>
+    <div class="tip">
+        <h1>print (печать)</h1>
+        <code>
+            <div class="command">print</div>
+            <div class="bracket">(</div>
+            <div class="string">"привет мир!"</div>
+            <div class="bracket">)</div>
+        </code>
+        <p>print выводит аргумент в консоль</p>
+        <p>консоль:</p>
+        <code>привет мир!</code>
+    </div>
+    <div class="tip">
+        <h1>переменные</h1>
+        <code>
+            <div class="var">x</div>
+            <div> = </div>
+            <div class="number">6</div>
+            <div class="newline"></div>
+            <div class="command">print</div>
+            <div class="bracket">(</div>
+            <div class="var">x</div>
+            <div class="bracket">)</div>
+        </code>
+        <p>переменная хранит значение как коробка, используя типы данных</p>
+    </div>
+    <div class="tip">
+        <h1>типы данных</h1>
+        <p>типы данных в python:</p>
+        <table class="data-types">
+            <tr>
+                <th>Тип данных</th>
+                <th>Пример</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>42</td>
+                <td>Целые числа</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>3.14</td>
+                <td>Числа с плавающей точкой</td>
+            </tr>
+            <tr>
+                <td>str</td>
+                <td>"привет"</td>
+                <td>Текстовые строки</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>True/False</td>
+                <td>Логические значения</td>
+            </tr>
+            <tr>
+                <td>list</td>
+                <td>[1, 2, 3]</td>
+                <td>Списки</td>
+            </tr>
+            <tr>
+                <td>tuple</td>
+                <td>(1, 2, 3)</td>
+                <td>Неизменяемые последовательности</td>
+            </tr>
+            <tr>
+                <td>dict</td>
+                <td>{"key": "value"}</td>
+                <td>Словари</td>
+            </tr>
+            <tr>
+                <td>set</td>
+                <td>set(1, 2, 3)</td>
+                <td>Неупорядоченное множество уникальных элементов</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tip">
+        <h1>input</h1>
+        <p>input это input XD</p>
+        <code>
+            <div class="var">response = </div>
+            <div class="command">input</div>
+            <div class="bracket">(</div>
+            <div class="string">"input: "</div>
+            <div class="bracket">)</div>
+            <div class="newline"></div>
+            <div class="command">print</div>
+            <div class="bracket">(</div>
+            <div>response</div>
+            <div class="bracket">)</div>
+        </code>
+        <p>input запрашивает значение у пользователя и в качестве подсказки показывает переданный аргумент</p>
+        <h4>input возращает str!</h4>
+    </div>
+    <div class="tip">
+        <h1>if, else</h1>
+        <p>if это условное выражение - если аргумент переданный ему равен True то код сработает иначе будет else, если else нету то else равен None</p>
+        <code>
+            <div class="command">if </div>
+            <div class="comment"> #тут передается аргумент</div>
+            <div class="bracket">:</div>
+            <div class="newline"></div>
+            <div class="command">   print</div>
+            <div class="bracket">(</div>
+            <div>True</div>
+            <div class="bracket">)</div>
+            <div class="newline"></div>
+            <div class="command">else</div>
+            <div class="comment"> #аргумента не принимает</div>
+            <div class="bracket">:</div>
+            <div class="newline"></div>
+            <div class="command">   print</div>
+            <div class="bracket">(</div>
+            <div>False</div>
+            <div class="bracket">)</div>
+        </code>
+        <p>расмотрим пример:</p>
+        <code>
+            <div class="var">res</div>
+            <div> = </div>
+            <div class="command">input</div>
+            <div class="bracket">(</div>
+            <div class="string">"write: "</div>
+            <div class="bracket">)</div>
+            <div class="newline"></div>
+            <div class="command">if </div>
+            <div class="var"> res</div>
+            <div> == </div>
+            <div class="string">"beba"</div>
+            <div class="bracket">:</div>
+            <div class="newline"></div>
+            <div class="command">   print</div>
+            <div class="bracket">(</div>
+            <div class="string">"text is beba!"</div>
+            <div class="bracket">)</div>
+            <div class="newline"></div>
+            <div class="command">else</div>
+            <div class="comment"> #если не равен beba</div>
+            <div class="bracket">:</div>
+            <div class="newline"></div>
+            <div class="command">   print</div>
+            <div class="bracket">(</div>
+            <div class="string">"text is not beba!"</div>
+            <div class="bracket">)</div>
+        </code>
+        <p>если вводимое значение равно beba то виведется "text is beba!" иначе "text is not beba!"</p>
+    </div>
+    <div class="tip">
+        <h1>операторы сравнения</h1>
+        <table class="data-types">
+            <tr>
+                <th>Оператор</th>
+                <th>Значение</th>
+                <th>Пример</th>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>Равно</td>
+                <td>5 == 5 # True</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>Не равно</td>
+                <td>5 != 3 # True</td>
+            </tr>
+            <tr>
+                <td>></td>
+                <td>Больше</td>
+                <td>5 > 3 # True</td>
+            </tr>
+            <tr>
+                <td><</td>
+                <td>Меньше</td>
+                <td>3 < 5 # True</td>
+            </tr>
+            <tr>
+                <td>>=</td>
+                <td>Больше или равно</td>
+                <td>5 >= 5 # True</td>
+            </tr>
+            <tr>
+                <td><=</td>
+                <td>Меньше или равно</td>
+                <td>3 <= 5 # True</td>
+            </tr>
+        </table>
+        <p>Операторы сравнения возвращают булево значение (True или False)</p>
+        <code>
+            <div class="var">x</div>
+            <div> = </div>
+            <div class="number">5</div>
+            <div class="newline"></div>
+            <div class="var">y</div>
+            <div> = </div>
+            <div class="number">3</div>
+            <div class="newline"></div>
+            <div class="command">print</div>
+            <div class="bracket">(</div>
+            <div class="var">x</div>
+            <div> > </div>
+            <div class="var">y</div>
+            <div class="bracket">)</div>
+            <div class="comment"> # выведет: True</div>
+        </code>
+    </div>
+    <div class="tip">
+        <h1>булевые значения</h1>
+        <p>их ты уже разобрал однако о них нужно поговорить</p>
+        <p>булевые значения True и False в Python внутренне представлены как 1 и 0. В компьютере они хранятся в виде битов (0 и 1). Это основа двоичной логики, на которой работают все компьютеры.<img src="trans.jpg" alt="transistor" class="minico"></p>
+        <p>Транзисторы в процессоре работают как электронные переключатели: когда ток течет - это логическая 1 (True), когда нет тока - это логический 0 (False). Именно так компьютер выполняет все вычисления.</p>
+        <h3>булевые приколы</h3>
+        <p>булевые значения имеют несколько полезных функций</p>
+        <code>
+            <div class="command">if </div>
+            <div>5 = 5</div>
+            <div class="command"> and </div>
+            <div>6 = 6</div>
+            <div class="bracket">:</div>
+            <div class="newline"></div>
+            <div class="comment">    #делает что то если оба аргумента True</div>
+        </code>
+    </div>
+</body>

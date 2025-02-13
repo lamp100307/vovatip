@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.inline {
+    display: flex;
+}
+
+.minico {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 4px;
+    display: inline;
+}
+
+body {
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+code {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #282a36;
+    color: #f8f8f2;
+    border-radius: 8px;
+    white-space: pre;
+    margin: 10px 0;
+    font-family: 'Consolas', 'Monaco', monospace;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    justify-content: center;
+}
+
+header p {
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tip {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.tip:hover {
+    transform: translateY(-2px);
+}
+
+.tip h1 {
+    color: #2d3748;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Стили для таблицы типов данных */
+.data-types {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.data-types th, 
+.data-types td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.data-types th {
+    background-color: #f7fafc;
+    font-weight: bold;
+    color: #4a5568;
+}
+
+.data-types tr:hover {
+    background-color: #f7fafc;
+}
+
+.data-types tr:last-child td {
+    border-bottom: none;
+}
+
+/* code markup */
+.command {
+    color: #ff79c6;
+}
+
+.bracket {
+    color: #8be9fd;
+}
+
+.string {
+    color: #50fa7b;
+}
+
+.operator {
+    display: inline-block;
+    padding: 0 0.5em;
+    color: #ff79c6;
+}
+
+.var {
+    color: #bd93f9;
+}
+
+.number {
+    color: #bd93f9;
+}
+
+.newline {
+    width: 100%;
+}
+.comment {
+    color: green;
+}
+
+/* Добавляем медиа-запрос для адаптивности */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header p {
+        margin: 5px 0;
+    }
+    
+    .tip {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    
+    code {
+        font-size: 14px;
+    }
+}
